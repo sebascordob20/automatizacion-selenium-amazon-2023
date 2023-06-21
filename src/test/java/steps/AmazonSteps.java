@@ -1,12 +1,25 @@
 package steps;
 
+import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import pages.AmazonPage;
 
 public class AmazonSteps {
+	private WebDriver driver;
+	private AmazonPage amazonPage;
+	
+	@Before
+	public void inicializar() {
+		amazonPage = new AmazonPage(driver);
+		driver = amazonPage.crearConexionDriver();
+	
+	}
+	
 	@Given("el usuario navega en www.amazon.com")
 	public void el_usuario_navega_en_www_amazon_com() {
-	    // Write code here that turns the phrase above into concrete actions
-	    //throw new io.cucumber.java.PendingException();
+		amazonPage.navegarHaciaAmazon();
 	}
 
 	@When("busca el articulo {string}")

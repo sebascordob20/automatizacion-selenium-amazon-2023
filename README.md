@@ -1,11 +1,18 @@
-Manejador de dependencias: gradle
+Manejador de dependencias: maven
+versión maven: 3.8.6
+Versión JDK: 19
 
+IDE: Eclipse IDE for Java Developers - 2023-06
 
 Dependencias con sus versiones:
-Selenium 4.9.1
+Selenium 3.141.59
 Cucumber 7.12.0
 Cucumber-junit 7.12.0
 junit-jupiter 5.9.3
 
+Nota: se usa la herramienta Eclipse MarketPlace ubicada en la opción help de la bara de herramientas de eclipse
+para instalar el pluggin de Cucumber.
+
 
 Comando para correr el proyecto: mvn run
+
