@@ -1,9 +1,9 @@
 #Autor: sebastian cordoba
-#Date: 19/06/2023
+#Date: 29/06/2023
 #Descripcion: archivo feature para crear los steps de añadir el producto al carrito de compras.
 
 
-
+@prueba
 Feature: Como usuario de Amazon.com cuando busco por el artículo Alexa deseo revisar si la tercera opción de
   la segunda página de resultados esta disponible para compra y puede ser añadida al carro de compras.
 
@@ -18,3 +18,7 @@ Feature: Como usuario de Amazon.com cuando busco por el artículo Alexa deseo re
     And selecciona el tercer item de los resultados
 
     Then agrega al carrito mas de dos unidades del tercer item si esta disponible para compra
+ 
+
+    
+    
