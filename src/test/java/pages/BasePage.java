@@ -156,25 +156,20 @@ public void scrollHaciaUnaPosicion(int coordenadaX, int coordenadaY){
 }
 
 
+/*Este metodo crea un objeto de tipo select de acuerdo a un parametro localizador y a un valor de la
+* lista desplegable que se pasa. El objeto select cumple la funcion de ser un combobox o una lista desplegable en una pagina web*/
 public void seleccionarItemCombobox(By localizador, String itemSeleccionado){
 Select	combobox = new Select(encontrarElemento(localizador));
 combobox.selectByValue(itemSeleccionado);
 }
 
-
+/*Este metodo crea un objeto de tipo select de acuerdo a un parametro localizador y a un index que se pasa
+El objeto select cumple la funcion de ser un combobox o una lista desplegable en una pagina web*/
 public void seleccionarItemCombobox(By localizador, int indexCombobox){
 Select	combobox = new Select(encontrarElemento(localizador));
 combobox.selectByIndex(indexCombobox);
 
 }
-
-
-public void seleccionarItemComboboxTexto(By localizador, String valorTexto){
-Select	combobox = new Select(encontrarElemento(localizador));
-WebElement element = driver.findElement(localizador);
-
-}
-
 
 /*Este metodo utiliza la clase JAVAscriptExecutor para ejecutar scripts de javascript.
 En este caso buscamos dar clic sobre un elemento con mayor facilidad para evitar posibles exepciones

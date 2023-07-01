@@ -17,14 +17,20 @@ private By campoBusqueda = By.id("twotabsearchtextbox");
 private By segundaPaginaLink = By.xpath("//a[text()='2']");
 private By tercerResultado = By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div[2]/div/div/div[1]/h2/a/span");
 private By disponibleLabel = By.cssSelector("//span[contains(text(),'Cantidad:')]");
-//private By dropdonwCantidad = By.cssSelector("span.a-dropdown-label");
 private By drodownListCantidad = By.id("quantity");
 private By botonAgregarAlCarrito = By.name("submit.add-to-cart");
 private By irAlCarrito = By.partialLinkText("Ir al Carri");
 private By subtotalProductos = By.xpath("//span[@id='sc-subtotal-label-buybox']");
+
+/*Estas 2 ultimas variables que siguen se usan asi: la primera para hacer la asersion 
+despues en la clase AmazonSteps. Y la segunda para generar un valor aleatorio de 2 a 30 para escoger
+la cantidad de productos a añadir al carrito*/
+
 public static String mensajeSubtotalProductos;
 private int cantidadProductos;
-	
+
+
+
 	public AmazonPage(WebDriver driverPage) {
 		super(driverPage);
 	}
@@ -33,9 +39,10 @@ private int cantidadProductos;
 		navegarHacia(URL_INICIAL);
 	}
 	
-	public void buscarElArticuloAlexa() {
+	
+	public void buscarElArticulo(String producto) {
 		try {
-			escribirSobreCampo(campoBusqueda,"Alexa");
+			escribirSobreCampo(campoBusqueda,producto);
 		
 		
 		} catch (Exception e) {

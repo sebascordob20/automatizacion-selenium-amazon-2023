@@ -16,8 +16,16 @@ Nota: se usa la herramienta de "Eclipse MarketPlace" ubicada en la opción help 
 para instalar el pluggin de Cucumber.
 
 
+Para visualizar el reporte de cucumber que se genera despues de toda la ejecución de los tests, hay que dirigirse 
+a la siguiente ruta del proyecto: src/test/reporte y se encuentra un archivo .html
+
+
 Comando para correr el proyecto:
 Se abre una terminal de cmd en windows sobre la carpeta del proyecto y se corren los siguientes comandos
  mvn install
 mvn clean
 mvn test
+
+
+Para tener en cuenta: El framework está configurado para cerrar la ventana del navegador unos segundos despues 
+de que cada test cada que se termina.
