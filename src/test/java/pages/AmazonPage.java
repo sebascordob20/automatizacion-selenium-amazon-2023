@@ -78,15 +78,21 @@ private int cantidadProductos;
 	
 	public void agregarAlCarritoDeCompras(){
 		 cantidadProductos = Utilidades.numeroAleatorioRango(2,30);
-		if(estaEnPantalla(drodownListCantidad)){
-			seleccionarItemDropDownJavascript(drodownListCantidad,String.valueOf(cantidadProductos));
-			darClicJSExecutor(botonAgregarAlCarrito);
-			darClicJSExecutor(irAlCarrito);
-			mensajeProductosSubtotal();
-			
-		}else{
-		System.out.print("El producto no se encuentra disponible para comprar");
+		try {
+			 if(estaEnPantalla(drodownListCantidad)){
+					seleccionarItemDropDownJavascript(drodownListCantidad,String.valueOf(cantidadProductos));
+					darClicJSExecutor(botonAgregarAlCarrito);
+					darClicJSExecutor(irAlCarrito);
+					mensajeProductosSubtotal();
+					
+				}else{
+				System.out.print("El producto no se encuentra disponible para comprar o la cantidad deseada"
+						+ "no se encuentra disponible en el stock");
+				}
+		} catch (Exception e) {
+			System.out.print("El producto no se encuentra disponible para comprar");
 		}
+		
 		
 	}
 	

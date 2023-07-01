@@ -26,7 +26,7 @@ Steps: toma como valor el nombre de la carpeta o paquete donde estan los steps d
 features = "src/test/features/Amazon.feature",
 glue = {"steps"},
 tags = "@prueba",
-plugin = { "pretty", "html:src/test/reporte/escenario-amazon-reporte.html"}, //escenario-busqueda-amazon,
+plugin = { "pretty", "html:src/test/reporte/escenario-busqueda-amazon,reporte.html"}, //
 monochrome = true
 
 		)
