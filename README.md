@@ -34,3 +34,4 @@ del archivo pom.xml instaladas).
 
 Para tener en cuenta: El framework está configurado para cerrar la ventana del navegador unos segundos despues 
 de que cada test se termina.
+# automatizacion-selenium-amazon-2023

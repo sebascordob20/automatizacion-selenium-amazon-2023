@@ -1,13 +1,13 @@
 #Autor: sebastian cordoba
 #Date: 29/06/2023
-#Descripcion: archivo feature para crear los steps de añadir el producto al carrito de compras.
+#Descripcion: archivo feature para crear los steps de aniadir el producto al carrito de compras.
 
 
 @prueba
-Feature: Como usuario de Amazon.com cuando busco por el artículo Alexa deseo revisar si la tercera opción de
-  la segunda página de resultados esta disponible para compra y puede ser añadida al carro de compras.
+Feature: Como usuario de Amazon.com cuando busco por el articulo Alexa deseo revisar si la tercera opcion de
+  la segunda pagina de resultados esta disponible para compra y puede ser aniadida al carro de compras.
 
-  Scenario Outline: Cargar al carrito de compra un producto encontrado a través de búsqueda con nombre del artículo
+  Scenario Outline: Cargar al carrito de compra un producto encontrado a traves de busqueda con nombre del articulo
 
     Given el usuario navega en www.amazon.com
 

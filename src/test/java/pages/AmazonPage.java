@@ -80,7 +80,8 @@ private int cantidadProductos;
 		 cantidadProductos = Utilidades.numeroAleatorioRango(2,30);
 		try {
 			 if(estaEnPantalla(drodownListCantidad)){
-					seleccionarItemDropDownJavascript(drodownListCantidad,String.valueOf(cantidadProductos));
+					//seleccionarItemDropDownJavascript(drodownListCantidad,String.valueOf(cantidadProductos));
+					seleccionarItemComboboxTextoVisible(botonAgregarAlCarrito, URL_INICIAL);
 					darClicJSExecutor(botonAgregarAlCarrito);
 					darClicJSExecutor(irAlCarrito);
 					mensajeProductosSubtotal();
